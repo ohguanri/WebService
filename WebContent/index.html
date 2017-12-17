@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/angular.js"></script>
+<script type="text/javascript" src="js/controller.js"></script>
+</head>
+
+
+<body ng-app = "Demo">
+
+	<!-- 
+	<table ng-controller = "loginController">
+		<tr>
+			<td>UserId</td>
+			<td>Password</td>
+		</tr>
+		<tr ng-repeat = "user in userList">
+			<td>{{user.userName}}</td>
+			<td>{{user.password}}</td>
+		</tr>
+	</table>
+	 -->
+	
+	<div ng-controller = "loginController">
+		<form action="/" id = "login">
+			userName: <input type="text" id="userName" ng-model="userName" /><br/>
+			password: <input type="text" id="password" ng-model="password" /><br/>
+			<button type="button" ng-click="submit()">Login</button>
+		</form>
+	</div>
+
+</body>
+
+</html>
